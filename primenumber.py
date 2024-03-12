@@ -8,4 +8,5 @@ def checkPrime(num: int) -> bool:
     return factors == 1
 
 
+print(checkPrime(1))
 print(checkPrime(127))
