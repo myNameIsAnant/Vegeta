@@ -4,4 +4,5 @@ def calculateFactorial(num: int) -> int:
     return num * calculateFactorial(num - 1)
 
 
-print(calculateFactorial(5))
+if __name__ == "__main__":
+    print(calculateFactorial(5))

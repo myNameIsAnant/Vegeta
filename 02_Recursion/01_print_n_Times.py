@@ -10,6 +10,7 @@ def printName(count: int, times: int) -> None:
     printName(count + 1, times)
 
 
-i = 1
-n = 5
-printName(i, n)
+if __name__ == "__main__":
+    i = 1
+    n = 5
+    printName(i, n)

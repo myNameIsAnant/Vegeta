@@ -7,7 +7,8 @@ def reverseNumber(num: int) -> int:
     return revnum
 
 
-print(reverseNumber(1973))
-print(reverseNumber(1234))
-print(reverseNumber(6786521))
-print(reverseNumber(16509))
+if __name__ == "__main__":
+    print(reverseNumber(1973))
+    print(reverseNumber(1234))
+    print(reverseNumber(6786521))
+    print(reverseNumber(16509))

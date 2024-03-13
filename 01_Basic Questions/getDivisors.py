@@ -7,3 +7,7 @@ def getFactors(num: int) -> list:
                 factor_list.append(num // x)
     factor_list.sort()
     return factor_list
+
+
+if __name__ == "__main__":
+    print(getFactors(120))
