@@ -16,10 +16,10 @@ def getFrequencies(v: List[int]) -> List[int]:
     minfreq = maxval = minval = float("inf")
 
     for value, freq in my_dict.items():
-        if freq > maxfreq or freq == maxfreq and value < maxval:
+        if freq > maxfreq or (freq == maxfreq and value < maxval):
             maxfreq = freq
             maxval = value
-        if freq < minfreq or freq == minfreq and value < minval:
+        if freq < minfreq or (freq == minfreq and value < minval):
             minfreq = freq
             minval = value
 
