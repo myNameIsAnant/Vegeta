@@ -1,5 +1,6 @@
 """
-
+Check Sorted Array
+https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957
 """
 
 from typing import List

@@ -7,8 +7,6 @@ from typing import List
 
 
 def largestElement(arr: List[int], n: int) -> int:
-    i = 0
-    j = n - 1
     maxvalue = float("-inf")
     for i in range(n):
         if arr[i] > maxvalue:
@@ -16,4 +14,5 @@ def largestElement(arr: List[int], n: int) -> int:
     return maxvalue
 
 
-print(largestElement([4, 7, 8, 6, 7, 6], 6))
+array = [4, 16, 9, 64, 25, 1, 36, 49]
+print(largestElement(array, len(array)))
