@@ -11,8 +11,7 @@ def removeDuplicates(nums: List[int]) -> int:
     if len(nums) == 1:
         return 1
     i = 0
-    j = 1
-    k = []
+    j = ct = 1
     while j < len(nums):
         if nums[i] == nums[j]:
             j += 1
@@ -20,7 +19,8 @@ def removeDuplicates(nums: List[int]) -> int:
             nums[i + 1] = nums[j]
             i += 1
             j += 1
-    return len(set(nums))
+            ct += 1
+    return ct
 
 
 print(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))

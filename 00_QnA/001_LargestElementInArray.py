@@ -1,5 +1,5 @@
 """
- Largest Element in the Array
+CodingNinjas: Largest Element in the Array
 https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279
 """
 
