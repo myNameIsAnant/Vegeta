@@ -1,5 +1,5 @@
 """
-Left Rotate an Array by One
+CodingNinjas: Left Rotate an Array by One
 https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278
 """
 
@@ -7,8 +7,11 @@ from typing import List
 
 
 def rotateArray(arr: List[int], n: int) -> List[int]:
-    arr[:-1], arr[-1] = arr[1:], arr[0]
-    return arr
+    el = arr[0]
+    for i in range(n - 1):
+        arr[i] = arr[i + 1]
+    arr[-1] = el
+    return array
 
 
 array = [1, 2, 3, 4, 5]

@@ -1,5 +1,5 @@
 """
-Second Largest Number
+CodingNinjas: Second Largest Number
 https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960
 """
 

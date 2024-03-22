@@ -1,5 +1,5 @@
 """
-Linear Search
+CodingNinjas: Linear Search
 https://www.codingninjas.com/studio/problems/linear-search_6922070
 """
 
