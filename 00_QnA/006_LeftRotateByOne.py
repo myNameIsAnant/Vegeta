@@ -1,6 +1,6 @@
 """
-CodingNinjas: Left Rotate an Array by One
-https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278
+Naukri Code 360: Left Rotate an Array by One
+https://www.naukri.com/code360/problems/left-rotate-an-array-by-one_5026278
 """
 
 from typing import List

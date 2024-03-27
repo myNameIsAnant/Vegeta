@@ -1,6 +1,6 @@
 """
-CodingNinjas: Second Largest Number
-https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960
+Naukri Code 360: Second Largest Number
+https://www.naukri.com/code360/problems/ninja-and-the-second-order-elements_6581960
 """
 
 from typing import List

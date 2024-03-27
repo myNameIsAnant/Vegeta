@@ -1,6 +1,6 @@
 """
-CodingNinjas: Merge 2 Sorted Array
-https://www.codingninjas.com/studio/problems/sorted-array_6613259
+Naukri Code 360: Merge 2 Sorted Array
+https://www.naukri.com/code360/problems/sorted-array_6613259
 """
 
 from typing import List

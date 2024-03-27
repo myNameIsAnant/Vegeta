@@ -1,6 +1,6 @@
 """
-CodingNinjas: Linear Search
-https://www.codingninjas.com/studio/problems/linear-search_6922070
+Naukri Code 360: Linear Search
+https://www.naukri.com/code360/problems/linear-search_6922070
 """
 
 from typing import List

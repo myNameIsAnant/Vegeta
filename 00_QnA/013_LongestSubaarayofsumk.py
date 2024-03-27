@@ -1,6 +1,6 @@
 """
-CodingNinjas: Longest Subarray With Sum K
-https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399
+Naukri Code 360: Longest Subarray With Sum K
+https://www.naukri.com/code360/problems/longest-subarray-with-sum-k_6682399
 """
 
 from typing import List

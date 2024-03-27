@@ -1,6 +1,6 @@
 """
-CodingNinjas: Check Sorted Array
-https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957
+Naukri Code 360: Check Sorted Array
+https://www.naukri.com/code360/problems/ninja-and-the-sorted-check_6581957
 """
 
 from typing import List

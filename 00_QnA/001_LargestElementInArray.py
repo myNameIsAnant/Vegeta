@@ -1,6 +1,6 @@
 """
-CodingNinjas: Largest Element in the Array
-https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279
+Naukri Code 360: Largest Element in the Array
+https://www.naukri.com/code360/problems/largest-element-in-the-array-largest-element-in-the-array_5026279
 """
 
 from typing import List
