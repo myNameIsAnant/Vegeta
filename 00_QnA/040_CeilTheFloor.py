@@ -13,7 +13,7 @@ def getFloorAndCeil(a: List[int], n: int, x: int) -> List[int]:
     while low <= high:
         mid = (low + high) // 2
         if a[mid] == x:
-            return a[mid], a[mid]
+            return [a[mid], a[mid]]
         elif a[mid] > x:
             c = a[mid]
             high = mid - 1
