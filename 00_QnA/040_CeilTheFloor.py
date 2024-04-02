@@ -20,7 +20,7 @@ def getFloorAndCeil(a: List[int], n: int, x: int) -> List[int]:
         else:
             f = a[mid]
             low = mid + 1
-    return f, c
+    return [f, c]
 
 
 array = [3, 4, 4, 7, 8, 10]
