@@ -7,8 +7,7 @@ from typing import List
 
 
 def getFloorAndCeil(a: List[int], n: int, x: int) -> List[int]:
-    f = -1
-    c = -1
+    f = c = -1
     low = 0
     high = n - 1
     while low <= high:
