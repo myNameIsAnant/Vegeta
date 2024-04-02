@@ -33,11 +33,12 @@ def longestSuccessiveElements(a: List[int]) -> int:
     for i in range(len(a)):
         hash_map[a[i]] = i
     for k in a:
-        while k in hash_map:
-            k += 1
-            ct += 1
-        max_ct = max(max_ct, ct)
-        ct = 0
+        if (k - 1) not in hash_map:
+            while k in hash_map:
+                k += 1
+                ct += 1
+            max_ct = max(max_ct, ct)
+            ct = 0
     return max_ct
 
 
