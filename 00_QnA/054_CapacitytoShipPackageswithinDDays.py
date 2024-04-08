@@ -9,6 +9,8 @@ from typing import List
 def shipWithinDays(weights: List[int], days: int) -> int:
     if days == len(weights):
         return max(weights)
+    if days == 1:
+        return sum(weights)
 
     def checkDays(weights: List[int], mid: int) -> int:
         dayct = 0
@@ -26,14 +28,11 @@ def shipWithinDays(weights: List[int], days: int) -> int:
         else:
             return dayct
 
-    low = 1
+    low = max(weights)
     high = sum(weights)
     ans = sum(weights)
     while low <= high:
         mid = low + ((high - low) // 2)
-        if mid < max(weights):
-            low = mid + 1
-            continue
         if checkDays(weights, mid) <= days:
             ans = mid
             high = mid - 1
