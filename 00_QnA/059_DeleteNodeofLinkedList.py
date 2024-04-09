@@ -17,7 +17,6 @@ def deleteLast(list: Node) -> Node:
     current = list
     while current:
         if not current.next:
-            current.val = None
             previous.next = None
         previous = current
         current = current.next
