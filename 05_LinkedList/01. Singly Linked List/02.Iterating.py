@@ -33,15 +33,14 @@ class SinglyLinkedList:
 
     def search(self, target) -> bool:
         if not self.head:
-            print("False")
+            return False
         else:
             current = self.head
             while current:
                 if current.value == target:
-                    print("True")
-                    return
+                    return True
                 current = current.next
-            print("False")
+            return False
 
     def insert(self, data, position) -> None:
         new_node = Node(data)
@@ -68,5 +67,5 @@ sll.append(70)
 sll.append(60)
 sll.append(50)
 sll.traverse()
-sll.search(60)
-sll.search(40)
+print(sll.search(60))
+print(sll.search(40))
