@@ -58,6 +58,46 @@ class SinglyLinkedList:
             new_node.next = current
             prev_node.next = new_node
 
+    def delete_head(self):
+        if not self.head:
+            print("Singly List Empty. No head exists.")
+        else:
+            self.head = self.head.next
+
+    def delete_value(self, value):
+        if self.head.value == value:
+            self.delete_head()
+            return
+        current = self.head.next
+        previous = self.head
+        while current:
+            if current.value == value:
+                if current.next:
+                    previous.next = current.next
+                else:
+                    previous.next = None
+                return
+            previous = current
+            current = current.next
+        print("Value doesnot exists in Linked List")
+
+    def delete_node(self, position):
+        if position == 0:
+            self.delete_head()
+            return
+        current = self.head.next
+        previous = self.head
+        count = 1
+        while current:
+            if count == position or not current.next:
+                if current.next:
+                    previous.next = current.next
+                else:
+                    previous.next = None
+                return
+            previous = current
+            current = current.next
+
 
 sll = SinglyLinkedList()
 sll.append(100)
@@ -69,3 +109,9 @@ sll.append(50)
 sll.traverse()
 print(sll.search(60))
 print(sll.search(40))
+sll.delete_head()
+sll.traverse()
+sll.delete_value(60)
+sll.traverse()
+sll.delete_node(0)
+sll.traverse()
