@@ -12,6 +12,16 @@ https://leetcode.com/problems/linked-list-cycle/description/
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
+        ### ***** Method 3 ***** ###
+        slow = fast  = head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return True
+        return False
+        
+        
         ### ***** Method 1 ***** ###
         # if not head or not head.next:
         #     return False
@@ -28,15 +38,15 @@ class Solution:
         # return False
 
         ### ***** Method 2 ***** ###
-        if not head or not head.next:
-            return False
-        slow = head
-        fast = head
-        while slow:
-            slow = slow.next
-            if not fast.next or not fast.next.next:
-                return False
-            fast = fast.next.next
-            if slow == fast:
-                return True
-        return False
+        # if not head or not head.next:
+        #     return False
+        # slow = head
+        # fast = head
+        # while slow:
+        #     slow = slow.next
+        #     if not fast.next or not fast.next.next:
+        #         return False
+        #     fast = fast.next.next
+        #     if slow == fast:
+        #         return True
+        # return False
