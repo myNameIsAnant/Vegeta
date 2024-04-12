@@ -12,16 +12,31 @@ https://leetcode.com/problems/linked-list-cycle/description/
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
+        ### ***** Method 1 ***** ###
+        # if not head or not head.next:
+        #     return False
+        # hash_map = {}
+        # current = head
+        # count = 0
+        # while current:
+        #     count += 1
+        #     if current in hash_map:
+        #         return True
+        #     else:
+        #         hash_map[current] = count
+        #     current = current.next
+        # return False
+
+        ### ***** Method 2 ***** ###
         if not head or not head.next:
             return False
-        hash_map = {}
-        current = head
-        count = 0
-        while current:
-            count += 1
-            if current in hash_map:
+        slow = head
+        fast = head
+        while slow:
+            slow = slow.next
+            if not fast.next or not fast.next.next:
+                return False
+            fast = fast.next.next
+            if slow == fast:
                 return True
-            else:
-                hash_map[current] = count
-            current = current.next
         return False
